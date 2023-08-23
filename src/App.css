@@ -1,38 +1,60 @@
+
+:root {
+  --color-main-background: #F9FAFC;
+  --color-layered-background: #FFF;
+  --color-accessory-background: #F2F2F2;
+  --color-main-text: #000;
+  --color-accessory-text: #8E8E8E;
+  --color-yellow: #FED401;
+  --color-highlight: #FFF5C2;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-main-background);
+  min-height: 100vh;
+  font-family: "Inter";
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 84%;
+  margin: 20px auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.VisualChartPanel {
+  border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.OverviewPanel {
+  border: 1px solid black;
+}
+
+.LeaderboardPanel-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.LeaderboardPanel {
+  border: 1px solid black;
+  width: 100%;
+}
+
+
+
+
+.InsightItem {
+  background-color: var(--color-layered-background);
+  border: 1px solid black;
 }

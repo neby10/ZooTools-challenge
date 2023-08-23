@@ -1,0 +1,37 @@
+{
+    "title": "Behaviour",
+    "columns": ["Browsers", "Decides"],
+    "link_text": "See all countries",
+    "data": [
+        {
+        "country": "United States",
+        "total": 30000,
+        "src": ""
+        },
+        {
+        "country": "Germany",
+        "total": 20000,
+        "src": ""
+        },
+        {
+        "country": "Netherlands",
+        "total": 10000,
+        "src": ""
+        },
+        {
+        "country": "India",
+        "total": 5000,
+        "src": ""
+        },
+        {
+        "country": "Japan",
+        "total": 3000,
+        "src": ""
+        },
+        {
+        "country": "Other",
+        "total": 2000,
+        "src": ""
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Traffic",
+    "columns": ["Source", "City"],
+    "link_text": "See traffic sources",
+    "data": [
+        {
+        "entity": "Google",
+        "total": 30000,
+        "src": ""
+        },
+        {
+        "entity": "Twitter",
+        "total": 20000,
+        "src": ""
+        },
+        {
+        "entity": "Facebook",
+        "total": 10000,
+        "src": ""
+        },
+        {
+        "entity": "LinkedIn",
+        "total": 5000,
+        "src": ""
+        },
+        {
+        "entity": "YouTube",
+        "total": 3000,
+        "src": ""
+        },
+        {
+        "entity": "Other",
+        "total": 2000,
+        "src": ""
+        }
+    ]
+}
