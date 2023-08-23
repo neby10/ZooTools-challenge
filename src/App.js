@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-header section">
         <h1>Summer referral competition</h1>
         <TimeFrameSelector lengths={timeFrames} />
       </div>
@@ -24,11 +24,11 @@ function App() {
         title={insights.title}
         caption={insights.caption}
         items={insights.items} />
-      <div className='LeaderboardPanel-container'>
+      <div className='LeaderboardPanel-container section'>
         <LeaderboardPanel />
         <LeaderboardPanel />
       </div>
-      <div className='LeaderboardPanel-container'>
+      <div className='LeaderboardPanel-container section'>
         <LeaderboardPanel />
         <LeaderboardPanel />
       </div>

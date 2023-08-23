@@ -6,25 +6,25 @@
             "title": "Signups are slowing down. -5% new than last week",
             "caption": "Tip: promote more your product online, and make sure to drive as much traffic as possible to the signup form. Here is a article on user acquisition",
             "article_link": "",
-            "image": ""
+            "emblem": "/emblems/bad.png"
         },
         {
             "title": "Form completion rate is good (20% conversion rate)",
             "caption": "Tip: You could increase conversion rates by asking fewer questions, making sure you are bringing qualified leads to your forms.",
             "article_link": "",
-            "image": ""
+            "emblem": "/emblems/good.png"
         },
         {
             "title": "80% of your signups are referrals, congrats!",
             "caption": "You are doing an outstanding job to motivating your users to invite their friends. Make sure to keep engaging with them with email marketing campaigns.",
             "article_link": "",
-            "image": ""
+            "emblem": "/emblems/good.png"
         },
         {
             "title": "Growth tips for you to try next",
             "caption": "Have you considered created email flows to remind your subscribers to invite their friends and celebrate referrals milestones? Read this guide on how to do it",
             "article_link": "",
-            "image": ""
+            "emblem": "/emblems/idea.png"
         }
     ]
 }

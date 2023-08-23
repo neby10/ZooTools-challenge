@@ -1,3 +1,7 @@
 # Welcome to ZooTools Challenge!
 
-- This site is created with React.
+# About
+- This site was created with the React library.
+
+## Bugs
+- Not quite a bug but needs noted. Site is not responsive for mobile viewing.
