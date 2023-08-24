@@ -1,35 +1,35 @@
 {
     "title": "Traffic",
     "columns": ["Source", "City"],
-    "link_text": "See traffic sources",
+    "button_text": "See traffic sources",
     "data": [
         {
-        "entity": "Google",
+        "heading": "Google",
         "total": 30000,
         "src": ""
         },
         {
-        "entity": "Twitter",
+        "heading": "Twitter",
         "total": 20000,
         "src": ""
         },
         {
-        "entity": "Facebook",
+        "heading": "Facebook",
         "total": 10000,
         "src": ""
         },
         {
-        "entity": "LinkedIn",
+        "heading": "LinkedIn",
         "total": 5000,
         "src": ""
         },
         {
-        "entity": "YouTube",
+        "heading": "YouTube",
         "total": 3000,
         "src": ""
         },
         {
-        "entity": "Other",
+        "heading": "Other",
         "total": 2000,
         "src": ""
         }

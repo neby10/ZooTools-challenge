@@ -1,37 +1,37 @@
 {
     "title": "Signup location",
     "columns": ["Country", "City"],
-    "link_text": "See all countries",
+    "button_text": "See all countries",
     "data": [
         {
-        "country": "United States",
+        "heading": "United States",
         "total": 30000,
-        "src": ""
+        "src": "/flags/USA_Icon.png"
         },
         {
-        "country": "Germany",
+        "heading": "Germany",
         "total": 20000,
-        "src": ""
+        "src": "/flags/Germany_Icon.png"
         },
         {
-        "country": "Netherlands",
+        "heading": "Netherlands",
         "total": 10000,
-        "src": ""
+        "src": "/flags/Netherlands_Icon.png"
         },
         {
-        "country": "India",
+        "heading": "India",
         "total": 5000,
-        "src": ""
+        "src": "/flags/India_Icon.png"
         },
         {
-        "country": "Japan",
+        "heading": "Japan",
         "total": 3000,
-        "src": ""
+        "src": "/flags/Japan_Icon.png"
         },
         {
-        "country": "Other",
+        "heading": "Other",
         "total": 2000,
-        "src": ""
+        "src": "/flags/Earth_Icon.png"
         }
     ]
 }

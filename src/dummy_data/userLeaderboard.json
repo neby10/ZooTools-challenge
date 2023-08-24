@@ -1,7 +1,7 @@
 {
   "title": "User leaderboard",
   "columns": ["Email", "Friends invited", "Country"],
-  "link_text": "See leaderboard",
+  "button_text": "See leaderboard",
   "data": [
     {
       "email": "paula.suarze@connect.es",

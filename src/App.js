@@ -13,9 +13,28 @@ function App() {
 
   const timeFrames = ["1h", "24h", "30d", "60d"];
 
+  const appStyle = {
+    textAlign: "center",
+    width: "84%",
+    margin: "20px auto",
+  }
+
+  const appHeaderStyle = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between"
+  }
+
+  const leaderboardPanelContainerStyle = {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gridTemplateRows: "1fr 1fr",
+    gridGap: "30px",
+  }
+
   return (
-    <div className="App">
-      <div className="App-header section">
+    <div style={appStyle}>
+      <div style={appHeaderStyle} className="section">
         <h1>Summer referral competition</h1>
         <TimeFrameSelector lengths={timeFrames} />
       </div>
@@ -24,13 +43,27 @@ function App() {
         title={insights.title}
         caption={insights.caption}
         items={insights.items} />
-      <div className='LeaderboardPanel-container section'>
-        <LeaderboardPanel />
-        <LeaderboardPanel />
-      </div>
-      <div className='LeaderboardPanel-container section'>
-        <LeaderboardPanel />
-        <LeaderboardPanel />
+      <div style={leaderboardPanelContainerStyle} className='section'>
+        <LeaderboardPanel
+          title={traffic.title} 
+          columns={traffic.columns} 
+          buttonText={traffic.button_text} 
+          data={traffic.data} />
+        <LeaderboardPanel 
+          title={traffic.title} 
+          columns={traffic.columns} 
+          buttonText={traffic.button_text} 
+          data={traffic.data} />
+        <LeaderboardPanel
+          title={signupLocation.title} 
+          columns={signupLocation.columns} 
+          buttonText={signupLocation.button_text} 
+          data={signupLocation.data} />
+        <LeaderboardPanel
+          title={behaviour.title} 
+          columns={behaviour.columns} 
+          buttonText={behaviour.button_text} 
+          data={behaviour.data} />
       </div>
     </div>
   );

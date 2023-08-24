@@ -1,4 +1,3 @@
-
 :root {
   --color-main-background: #F9FAFC;
   --color-layered-background: #FFF;
@@ -30,24 +29,4 @@ body {
 .my-box-shadow {
   border-radius: 10px;
   box-shadow: 5px 5px 5px #E2E2E4;
-}
-
-
-/* Component Classes */
-
-.App {
-  text-align: center;
-  width: 84%;
-  margin: 20px auto;
-}
-
-.App-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.LeaderboardPanel-container {
-  display: flex;
-  flex-direction: row;
 }
