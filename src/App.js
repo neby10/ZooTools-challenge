@@ -2,12 +2,13 @@ import './App.css';
 import LeaderboardPanel from './components/LeaderboardPanel';
 import OverviewPanel from './components/OverviewPanel';
 import TimeFrameSelector from './components/TimeFrameSelector';
-import VisualChartPanel from './components/VisualChartPanel';
+import BarChartPanel from './components/BarChartPanel';
 import userLeaderboard from './dummy_data/userLeaderboard.json';
 import signupLocation from './dummy_data/signupLocation.json';
 import traffic from './dummy_data/traffic.json';
 import insights from './dummy_data/insights.json';
 import behaviour from './dummy_data/behavior.json';
+import bar_chart from './dummy_data/bar_chart.json';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
         <h1>Summer referral competition</h1>
         <TimeFrameSelector lengths={timeFrames} />
       </div>
-      <VisualChartPanel />
+      <BarChartPanel items={bar_chart.items} />
       <OverviewPanel 
         title={insights.title}
         caption={insights.caption}

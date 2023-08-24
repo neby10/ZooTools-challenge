@@ -1,15 +1,49 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function TimeFrameSelector({ lengths }) {
+    const [currentTimeFrame, setCurrentTimeFrame] = useState(lengths[0]);
+
+    const handleTimeFrameClick = (event) => {
+        setCurrentTimeFrame(event.target.value);
+    }
+
+    useEffect(() => {
+        console.log(currentTimeFrame)
+    }, [currentTimeFrame])
+
+    const timeFrameSelectorContainer = {
+        display: "flex",
+        flexDirection: "row",
+        backgroundColor: "var(--color-layered-background)",
+        justifyContent: "center",
+        borderRadius: "10px",
+        boxShadow: "0px 3px 2px #E2E2E4",
+        
+    }
 
     return (
-        <div className='TimeFrameSelector'>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <div style={timeFrameSelectorContainer}>
             {
                 lengths.map((item, index) => (
-                    <span key={index}>{item}</span>
+                    <button style={{
+                        backgroundColor: currentTimeFrame === item ? "#E2E3E8" : "var(--color-main-background)",
+                        borderRadius: "5px",
+                        border: "none",
+                        padding: "5px",
+                        fontSize: "14px",
+                        margin: "5px",
+                        padding: "8px",
+                        // margin: columns[0] === item ? "0 5px 0 0" : "0 0 0 5px",
+                    }}  
+                    onClick={handleTimeFrameClick}
+                    value={item}
+                    key={index}>
+                        {item}
+                    </button>
                 ))
             }
-            
+            </div>            
         </div>
     )
 }
