@@ -38,11 +38,7 @@
         - SeeLeaderboardButton
 
 ## TODO:
-- MISC.
-    - Buttons
-        - make buttons modular by creating a button component??
-        - change button background color based on which one is active
-    - REVIEW CODE TO SIMPLIFY AND IMPLEMENT BETTER CODE MODULARITY WITH COMPONENTS WHERE NECESSARY
+- REVIEW CODE TO SIMPLIFY AND IMPLEMENT BETTER CODE MODULARITY WITH COMPONENTS WHERE NECESSARY
 - Finish ReadME
 - Deploy to Netlify when Ready
 - Share with Jorge **(GitHub Repo Link + Netlify App Link)**
