@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 function TimeFrameSelector({ lengths }) {
     const [currentTimeFrame, setCurrentTimeFrame] = useState(lengths[0]);

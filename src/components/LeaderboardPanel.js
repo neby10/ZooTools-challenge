@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import SeeLeaderboardButton from './SeeLeaderboardButton';
 
 function LeaderboardPanel({ title, columns, buttonText, data}) {
@@ -33,15 +33,6 @@ function LeaderboardPanel({ title, columns, buttonText, data}) {
         justifyContent: "space-between",
         margin: "10px 30px",
     }
-
-    // const highlightedStyle = {
-    //     display: "flex",
-    //     flexDirection: "row",
-    //     alignItems: "center",
-    //     backgroundColor: "var(--color-highlight)",
-    //     padding: "5px",
-    //     borderRadius: "5px",
-    // }
 
     const leaderboardPanelFooterStyle = {
         display: "flex",
