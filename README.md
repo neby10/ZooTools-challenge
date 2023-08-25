@@ -30,6 +30,7 @@
     - TimeFrameSelector
     - BarChartPanel
         - BarChartItem
+            - HoverBox
     - OverviewPanel
         - InsightItem
     - UserLeaderboardPanel
@@ -39,6 +40,4 @@
 
 ## TODO:
 - REVIEW CODE TO SIMPLIFY AND IMPLEMENT BETTER CODE MODULARITY WITH COMPONENTS WHERE NECESSARY
-- Finish ReadME
-- Deploy to Netlify when Ready
 - Share with Jorge **(GitHub Repo Link + Netlify App Link)**

@@ -4,7 +4,6 @@ import InsightItem from './InsightItem';
 function OverviewPanel({ title, caption, items}) {
 
     const overviewPanelStyle = {
-        // border: "1px solid black",
         padding: "40px",
         backgroundColor: "var(--color-layered-background)",
     }
