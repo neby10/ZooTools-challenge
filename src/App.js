@@ -3,6 +3,7 @@ import LeaderboardPanel from './components/LeaderboardPanel';
 import OverviewPanel from './components/OverviewPanel';
 import TimeFrameSelector from './components/TimeFrameSelector';
 import BarChartPanel from './components/BarChartPanel';
+import UserLeaderboardPanel from './components/UserLeaderboardPanel';
 import userLeaderboard from './dummy_data/userLeaderboard.json';
 import signupLocation from './dummy_data/signupLocation.json';
 import traffic from './dummy_data/traffic.json';
@@ -45,11 +46,11 @@ function App() {
         caption={insights.caption}
         items={insights.items} />
       <div style={leaderboardPanelContainerStyle} className='section'>
-        <LeaderboardPanel
-          title={traffic.title} 
-          columns={traffic.columns} 
-          buttonText={traffic.button_text} 
-          data={traffic.data} />
+        <UserLeaderboardPanel
+          title={userLeaderboard.title} 
+          columns={userLeaderboard.columns} 
+          buttonText={userLeaderboard.button_text} 
+          data={userLeaderboard.data} />
         <LeaderboardPanel 
           title={traffic.title} 
           columns={traffic.columns} 

@@ -8,6 +8,7 @@
 - Styling mostly implemented in components since many styles are component specific. General styling is utilized in App.css.
 - Flag images found here: [Icon Finder](https://www.iconfinder.com/)
 - Emblems in insight panel customized using the Canva website.
+- I did not achieve subtle background lines in the BarChartPanel. I wonder if this would be best achieved with a background image or css...
 
 ## Bugs
 - Not quite a bug but needs noted. Site is not responsive for mobile viewing.
@@ -21,7 +22,6 @@
     - background lines
     - 100,000 participants div
     - hover functionality that shows number total of bar
-- Button Component at Top Right
 - Buttons
     - make buttons modular by creating a button component??
     - change button background color based on which one is active
