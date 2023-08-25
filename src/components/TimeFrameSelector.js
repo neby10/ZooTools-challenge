@@ -7,10 +7,6 @@ function TimeFrameSelector({ lengths }) {
         setCurrentTimeFrame(event.target.value);
     }
 
-    useEffect(() => {
-        console.log(currentTimeFrame)
-    }, [currentTimeFrame])
-
     const timeFrameSelectorContainer = {
         display: "flex",
         flexDirection: "row",
@@ -18,7 +14,6 @@ function TimeFrameSelector({ lengths }) {
         justifyContent: "center",
         borderRadius: "10px",
         boxShadow: "0px 3px 2px #E2E2E4",
-        
     }
 
     return (
@@ -34,7 +29,6 @@ function TimeFrameSelector({ lengths }) {
                         fontSize: "14px",
                         margin: "5px",
                         padding: "8px",
-                        // margin: columns[0] === item ? "0 5px 0 0" : "0 0 0 5px",
                     }}  
                     onClick={handleTimeFrameClick}
                     value={item}

@@ -2,36 +2,70 @@
     "title": "Traffic",
     "columns": ["Source", "City"],
     "button_text": "See traffic sources",
-    "data": [
-        {
-        "heading": "Google",
-        "total": 30000,
-        "src": ""
-        },
-        {
-        "heading": "Twitter",
-        "total": 20000,
-        "src": ""
-        },
-        {
-        "heading": "Facebook",
-        "total": 10000,
-        "src": ""
-        },
-        {
-        "heading": "LinkedIn",
-        "total": 5000,
-        "src": ""
-        },
-        {
-        "heading": "YouTube",
-        "total": 3000,
-        "src": ""
-        },
-        {
-        "heading": "Other",
-        "total": 2000,
-        "src": ""
-        }
-    ]
+    "data": {
+        "Source": [
+            {
+            "heading": "Google",
+            "total": 30000,
+            "src": ""
+            },
+            {
+            "heading": "Twitter",
+            "total": 20000,
+            "src": ""
+            },
+            {
+            "heading": "Facebook",
+            "total": 10000,
+            "src": ""
+            },
+            {
+            "heading": "LinkedIn",
+            "total": 5000,
+            "src": ""
+            },
+            {
+            "heading": "YouTube",
+            "total": 3000,
+            "src": ""
+            },
+            {
+            "heading": "Other",
+            "total": 2000,
+            "src": ""
+            }
+        ],
+        "City": [
+            {
+            "heading": "New York",
+            "total": 35000,
+            "src": ""
+            },
+            {
+            "heading": "San Francisco",
+            "total": 25000,
+            "src": ""
+            },
+            {
+            "heading": "Los Angelos",
+            "total": 23000,
+            "src": ""
+            },
+            {
+            "heading": "Seattle",
+            "total": 18000,
+            "src": ""
+            },
+            {
+            "heading": "Dublin",
+            "total": 15000,
+            "src": ""
+            },
+            {
+            "heading": "Other",
+            "total": 13000,
+            "src": ""
+            }
+        ]
+    }
 }

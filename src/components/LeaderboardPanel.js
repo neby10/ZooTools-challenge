@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import SeeLeaderboardButton from './SeeLeaderboardButton';
 
 function LeaderboardPanel({ title, columns, buttonText, data}) {
 
@@ -7,10 +8,6 @@ function LeaderboardPanel({ title, columns, buttonText, data}) {
     const handleColumnClick = (event) => {
         setColumnActive(event.target.value);
     }
-
-    useEffect(() => {
-        console.log("columnActive: " + columnActive);
-    }, [columnActive]);
 
     const leaderboardPanelStyle = {
         width: "100%",
@@ -52,14 +49,6 @@ function LeaderboardPanel({ title, columns, buttonText, data}) {
         margin: "15px 30px",
     }
 
-    const bottomButtonStyle = {
-        backgroundColor: "var(--color-accessory-background)",
-        padding: "10px",
-        borderRadius: "5px",
-        border: "none",
-        fontSize: "12px",
-    }
-
     return (
         <div style={leaderboardPanelStyle} className='my-box-shadow'>
             <div style={leaderboardPanelHeaderStyle}>
@@ -86,7 +75,7 @@ function LeaderboardPanel({ title, columns, buttonText, data}) {
             </div>
             <div>
                 {
-                    data.map((dataObject, index) => (
+                    data[columnActive].map((dataObject, index) => (
                         <div style={leaderboardItemStyle} key={index}>
                             <div style={{
                                 width: `${(dataObject.total / 80000) * 100}%`, 
@@ -100,13 +89,13 @@ function LeaderboardPanel({ title, columns, buttonText, data}) {
                                 {dataObject.src && <img src={dataObject.src} alt={dataObject.heading + " Flag"} width="17px" height="17px" style={{marginRight: "10px"}} />}
                                 <div style={{fontSize: "16px"}}>{dataObject.heading}</div>
                             </div>
-                            <div>{dataObject.total}</div>
+                            <div>{dataObject.total.toLocaleString()}</div>
                         </div>
                     ))
                 }
             </div>
             <div style={leaderboardPanelFooterStyle} >
-                <button style={bottomButtonStyle} onClick={() => alert(buttonText + " button was clicked")}>{buttonText}</button>
+                <SeeLeaderboardButton buttonText={buttonText} />
             </div>
         </div>
     )

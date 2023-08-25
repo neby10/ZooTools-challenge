@@ -16,18 +16,13 @@ function BarChartPanel({items}) {
         alignItems: "flex-end",
         margin: "0 30px",
         padding: "20px",
-
-        // width: 100%;
-        // height: 300px; /* Set the height of the chart container */
-        // border: 1px solid #ccc;
-        // padding: 10px;
     }
 
     const barChartHeaderStyle = {
         float: "left",
         position: "absolute",
         zIndex: "2",
-        margin: "0 30px",
+        margin: "10px 30px 0 30px",
         padding: "20px",
         textAlign: "left",
     }
@@ -35,7 +30,7 @@ function BarChartPanel({items}) {
     return (
         <div style={barChartPanelStyle} className='section my-box-shadow'>
             <div style={barChartHeaderStyle}>
-                <div style={{fontSize: "22px", fontWeight: "bold"}}>100,000 <img src='/emblems/people.png' alt='people icon' width="22px" height="22px" /></div>
+                <div style={{fontSize: "24px", fontWeight: "bold"}}>100,000 <img src='/emblems/people.png' alt='people icon' width="22px" height="22px" /></div>
                 <div>Participants</div>
             </div>
             <div style={barChartStyle}>

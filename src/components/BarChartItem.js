@@ -55,7 +55,7 @@ function BarChartItem({ item }) {
                     className='my-box-shadow'
                     style={popUpBoxStyle}>
                         <div style={{margin: "4px", fontSize: "12px", display: "flex"}}>
-                            <span style={{fontWeight: "bold"}}>{item.value}</span>
+                            <span style={{fontWeight: "bold"}}>{item.value.toLocaleString()}</span>
                             <span style={{marginLeft: "4px"}}>signups</span>
                         </div>
                         <div style={{margin: "4px", fontSize: "10px", color: "var(--color-accessory-text)", fontWeight: "bold"}}>{item.date}</div>

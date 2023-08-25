@@ -1,4 +1,5 @@
 import React from 'react';
+import SeeLeaderboardButton from './SeeLeaderboardButton';
 
 function UserLeaderboardPanel({ title, columns, buttonText, data }) {
 
@@ -33,13 +34,6 @@ function UserLeaderboardPanel({ title, columns, buttonText, data }) {
         // margin: "10px 30px",
     }
 
-    const bottomButtonStyle = {
-        backgroundColor: "var(--color-accessory-background)",
-        padding: "10px",
-        borderRadius: "5px",
-        border: "none",
-        fontSize: "12px",
-    }
     const textStyle = {
         fontSize: "12px",
         textAlign: "left",
@@ -51,25 +45,29 @@ function UserLeaderboardPanel({ title, columns, buttonText, data }) {
                 <div style={titleStyle}>{title}</div>
             </div>
             <table style={{width: "100%", borderCollapse: "separate", borderSpacing: "25px"}}>
-                <tr style={leaderboardItemStyle}>
-                    <td style={textStyle}>{columns[0]}</td>
-                    <td style={textStyle}>{columns[1]}</td>
-                    <td style={textStyle}>{columns[2]}</td>
-                </tr>
-                {
-                data.map((dataObject, index) => (
-                    <tr style={leaderboardItemStyle} key={index}>
-                        <td style={textStyle}>{dataObject.email}</td>
-                        <td style={textStyle}>{dataObject.friends_invited}</td>
-                        <td style={textStyle}>{dataObject.country}</td>
+                <thead>
+                    <tr>
+                        <td style={textStyle}>{columns[0]}</td>
+                        <td style={textStyle}>{columns[1]}</td>
+                        <td style={textStyle}>{columns[2]}</td>
                     </tr>
-                ))
-                }
+                </thead>
+                <tbody>
+                    {
+                    data.map((dataObject, index) => (
+                        <tr key={index}>
+                            <td style={textStyle}>{dataObject.email}</td>
+                            <td style={textStyle}>{dataObject.friends_invited.toLocaleString()}</td>
+                            <td style={textStyle}>{dataObject.country}</td>
+                        </tr>
+                    ))
+                    }
+                </tbody>
             </table>
             <div>
             </div>
             <div style={userLeaderboardPanelFooterStyle} >
-                <button style={bottomButtonStyle} onClick={() => alert(buttonText + " button was clicked")}>{buttonText}</button>
+                <SeeLeaderboardButton buttonText={buttonText} />
             </div>
         </div>
     )
