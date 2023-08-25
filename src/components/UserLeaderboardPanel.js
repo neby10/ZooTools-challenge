@@ -26,14 +26,6 @@ function UserLeaderboardPanel({ title, columns, buttonText, data }) {
         fontWeight: "bold",
     }
 
-    const leaderboardItemStyle = {
-        // display: "flex",
-        // flexDirection: "row",
-        // fontSize: "18px",
-        // justifyContent: "space-between",
-        // margin: "10px 30px",
-    }
-
     const textStyle = {
         fontSize: "12px",
         textAlign: "left",

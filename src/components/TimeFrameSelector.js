@@ -25,7 +25,6 @@ function TimeFrameSelector({ lengths }) {
                         backgroundColor: currentTimeFrame === item ? "#E2E3E8" : "var(--color-main-background)",
                         borderRadius: "5px",
                         border: "none",
-                        padding: "5px",
                         fontSize: "14px",
                         margin: "5px",
                         padding: "8px",
