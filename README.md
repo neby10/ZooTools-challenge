@@ -10,7 +10,7 @@
 - This project was created using create-react-app. There are no additional dependencies.
 
 ## Visit
-- Deployed on Netlify: [Visit Project]()
+- Deployed on Netlify: [Visit Project](https://zootools-challenge-nicholas-eby.netlify.app/)
 
 ## Project Notes
 - This site was created with the React library.
@@ -37,7 +37,3 @@
         - SeeLeaderboardButton
     - LeaderboardPanel
         - SeeLeaderboardButton
-
-## TODO:
-- REVIEW CODE TO SIMPLIFY AND IMPLEMENT BETTER CODE MODULARITY WITH COMPONENTS WHERE NECESSARY
-- Share with Jorge **(GitHub Repo Link + Netlify App Link)**
